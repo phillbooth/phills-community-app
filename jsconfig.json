@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".", // Sets the base directory relative to this config file
+        "paths": {
+            "@/*": ["resources/js/*"], // Maps the "@" alias to your resources/js directory
+            "ziggy-js": ["./vendor/tightenco/ziggy/src/js"] // Maps "ziggy-js" to the Ziggy package location
+        },
+        "target": "es2017", // Set ECMAScript target version
+        "module": "esnext", // Use latest module syntax
+        "moduleResolution": "node", // Use Node.js-style module resolution
+        "allowJs": true, // Allow JavaScript files to be compiled
+        "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts)
+        "esModuleInterop": true, // Enables compatibility with Babel/TypeScript-generated ES6
+        "forceConsistentCasingInFileNames": true // Ensure file names are consistent in case
+    },
+    "exclude": [
+        "node_modules", // Ignore node_modules directory
+        "public" // Optionally ignore public directory if not using TypeScript in there
+    ],
+    "include": [
+        "resources/js/**/*" // Include all files under the resources/js directory
+    ]
+}
